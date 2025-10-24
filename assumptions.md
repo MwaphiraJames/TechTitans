@@ -1,0 +1,8 @@
+- Energy-only valuation (ignore capex, O&M, taxes, capacity, RECs).
+- 3-yr hourly history → shapes, basis, volatility.
+- 2026–2030 via monthly hub forwards (peak/off-peak → monthly flat via shapes).
+- Basis modeled per month for **DA** and **RT** separately.
+- Volume variability from historical hourly distributions (month×block).
+- Risk appetite baseline **P75**; toggles P50/P90 and **CVaR α**.
+- Negative-price modes: include vs revenue=0 when price<0.
+- Simulations: bootstrap residuals with regime switching.
